@@ -1,0 +1,79 @@
+print('•'*32)
+print(' WELCOME TO HOSPITAL MANAGEMENT ')
+print('•'*32)
+print('enter 1 to doctor mode')
+print('enter 2 to patient mode')
+a=int(input('enter your choice:'))
+print('_'*30)
+if a==1:
+	print('1.DOCTOR MODE')
+	print('_'*30)
+	b=int(input('enter password:'))
+	if(b==8272):
+		print('enter 1 to manage week day appointment ')
+		print('enter 2 to manage week end appointment')
+		print('enter 3 to manage meeting')
+		c=int(input('enter your choice:'))
+		print('_'*30)
+		print('enter 1 for pediatrics')
+		print('enter 2 for dentist')
+		print('enter 3 for psychiatrist')
+		d=int(input('enter your choice:'))
+		print('_'*30)
+		if(c==1):
+			   print('week day appointment')
+			   if(d==1):
+			   	print('pediateics')
+			   	print('appointment from 4pm to 9pm')
+			   elif(d==2):
+			   	print('dentist')
+			   	print('appointment from 2pm to 8pm')
+			   else:
+			   	print('psychiateist')
+			   	print('apointment from 10am to 2pm' )
+		elif(c==2):
+		    print('week end appointment')
+		    if(d==1):
+		    	print('pediatrics')
+		    	print('appointment from 6pm to 10pm')
+		    elif(d==2):
+		    	print('dentist')
+		    	print('appointment from 4pm to 8pm')
+		    else:
+		    	print('psychiateist')
+		    	print('appointment from 2pm to 4pm')
+		else:
+		    print('manage meeting')
+		    print(' meetings only on mon-wed')
+		    print('enter 1 for monday')
+		    print('enter 2 for tuesday')
+		    print('enter 3 for wednesday')
+		    e=int(input('enter your choice:'))
+		    if(e==1):
+		    	print('monday')
+		    	print('timing_11am to 12 noon')
+		    elif(e==2):
+		    	print('tuesday')
+		    	print('timing_9am to 10am')
+		    else:
+		    	print('wednesday')
+		    	print('timing_3pm to 4pm')
+	else:
+		print('enter correct password')
+else:
+    	print('2.DOCTOR MODE')
+    	print('enter 1 to book appointment')
+    	print('entet 2 to cancle appointment')
+    	f=int(input('enter your choice:'))
+    	print('_'*30)
+    	if(f==1):
+    		print('book appointment')
+    		g=input('enter your name:')
+    		g1=input('enter your seekness')
+    		print('timing 1:30pm to 6:00pm ')
+    		print('your appointment is bookes')
+    	else:
+    		print('cancle appointment')
+    		h=input('enter your name:')
+    		h1=input('enter your sickness:')
+    		print('your appointment has been cancle')
